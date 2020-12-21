@@ -1,0 +1,30 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.5rem 2rem;
+    border-radius: 3rem 0 3rem 3rem;
+
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      -135deg,
+      $color-primary-dark,
+      $color-primary-light 100%
+    );
+    color: $color-white;
+  }
+  & span:hover {
+    transform: translateX(-20px);
+  }
+}

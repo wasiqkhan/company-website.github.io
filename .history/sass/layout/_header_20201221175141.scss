@@ -1,0 +1,60 @@
+.header {
+  height: 80vh;
+  position: relative;
+
+  &__content {
+    display: flex;
+  }
+
+  &__logo-box {
+    margin-top: 1.2rem;
+  }
+
+  &__logo {
+    height: 6.5rem;
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.5rem 2rem rgba($color-black, 0.15);
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+  &__link {
+    color: $color-primary;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+  }
+  &__cta {
+    color: $color-primary;
+  }
+}

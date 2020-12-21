@@ -1,0 +1,23 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.5rem 2rem;
+    border-bottom-right-radius: 3rem;
+    color: $color-black;
+    transition: all 0.2s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-primary {
+    background-image: linear-gradient(
+      135deg,
+      $color-primary-dark 0%,
+      $color-primary-light 100%
+    );
+    color: $color-white;
+  }
+}

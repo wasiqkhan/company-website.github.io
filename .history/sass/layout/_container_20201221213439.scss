@@ -1,0 +1,13 @@
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  // margin-top: 8rem;
+}

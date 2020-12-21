@@ -1,0 +1,9 @@
+.header {
+  height: 80vh;
+  background-image: linear-gradient(
+      135deg,
+      rgba($color-secondary-dark, 0.9),
+      rgba($color-secondary-light, 0.9)
+    ),
+    url(../assets/img/header.jpg);
+}

@@ -1,0 +1,32 @@
+.header {
+  height: 80vh;
+
+  &__logo {
+    height: 6.5rem;
+  }
+}
+
+.nav {
+  background-color: $color-primary;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 1.5rem 2rem rgba($color-black, 0.15);
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+  &__link {
+    color: $color-primary-dark;
+  }
+}

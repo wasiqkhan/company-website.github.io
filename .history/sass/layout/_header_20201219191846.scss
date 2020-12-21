@@ -1,0 +1,17 @@
+.header {
+  height: 80vh;
+
+  &__logo {
+  }
+}
+
+.nav {
+  background-color: $color-primary;
+  height: 18%;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

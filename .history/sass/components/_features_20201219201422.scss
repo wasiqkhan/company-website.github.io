@@ -1,0 +1,14 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-item {
+  background-color: $color-white;
+  padding: 2rem 2rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  margin: 1rem;
+  border-radius: 1rem;
+}

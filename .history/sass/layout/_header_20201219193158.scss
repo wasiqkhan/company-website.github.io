@@ -1,0 +1,28 @@
+.header {
+  height: 80vh;
+
+  &__logo {
+    height: 6.5rem;
+  }
+}
+
+.nav {
+  background-color: $color-primary;
+  height: 18%;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+  }
+  &__link {
+    color: $color-primary;
+  }
+}

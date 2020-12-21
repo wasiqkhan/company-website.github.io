@@ -1,0 +1,28 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    padding: 0.5rem 2rem;
+    border-bottom-right-radius: 3rem;
+    color: $color-black;
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    font-size: $default-font-size;
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-image: linear-gradient(
+      -135deg,
+      $color-primary-dark,
+      $color-primary-light 100%
+    );
+    color: $color-white;
+
+    &btn-text {
+      transform: translateX(-10px);
+    }
+  }
+}

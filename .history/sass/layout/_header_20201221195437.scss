@@ -1,0 +1,64 @@
+.header {
+  height: 100vh;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__hero {
+    margin-top: 10rem;
+    flex-basis: 50%;
+
+    &-img {
+      width: 100%;
+    }
+  }
+
+  &__logo-box {
+    margin-top: 1.2rem;
+    align-self: flex-end;
+  }
+
+  &__logo {
+    height: 6.5rem;
+  }
+
+  &__text-box {
+    flex-basis: 35%;
+  }
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0.2px 28px 0 rgba(0, 0, 0, 0.06);
+  background-color: $color-white;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    padding: 0 2rem;
+  }
+  &__link {
+    color: $color-primary;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+  }
+  &__cta {
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,33 @@
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features-item {
+  background-color: $color-white;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 0.2rem 4.8rem 0 rgba($color-black, 0.1);
+  margin: 1rem;
+  border-radius: 4rem 0 4rem 4rem;
+  transition: all 0.3s;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  position: relative;
+
+  &:hover {
+    background-image: linear-gradient(
+      135deg,
+      $color-primary-dark 0%,
+      $color-primary-light 100%
+    );
+    color: $color-white;
+    transform: translateY(-1rem);
+  }
+
+  &__icon {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}

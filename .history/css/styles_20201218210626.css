@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&subset=latin-ext');
+html {
+  font-size: 63%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 0.5rem;
+}

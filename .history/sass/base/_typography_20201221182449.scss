@@ -1,0 +1,39 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  background-color: $color-white;
+  color: $color-primary;
+}
+
+a {
+  text-decoration: none !important;
+}
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+
+  &--main {
+    display: block;
+    line-height: 4.6rem;
+    letter-spacing: 0.93px;
+    color: $color-tertiary-dark;
+  }
+}
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  letter-spacing: 0.88px;
+  line-height: 2.6rem;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
