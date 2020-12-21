@@ -26,18 +26,18 @@
     );
   }
   &-secondary {
-    color: $color-secondary-dark;
-    background-color: $color-white;
-    width: 45%;
-    margin-right: 2.5rem;
-    margin-bottom: 3rem;
+    color: $color-primary-dark;
+    width: 40%;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
     box-shadow: 0 2px 2rem 0 rgba($color-black, $alpha: 0.06);
     font-weight: 400;
     font-size: 1.4rem;
     letter-spacing: 0.88px;
     line-height: 2rem;
-    position: relative;
-    backface-visibility: hidden;
+    &:hover span {
+      transform: translateX(10px);
+    }
   }
 
   &:hover {
@@ -47,7 +47,5 @@
       $color-primary-light 100%
     );
     color: $color-white;
-    box-shadow: 0 2px 5px 0 rgba(51, 61, 73, $alpha: 0.24);
-    transform: translateY(-3px);
   }
 }

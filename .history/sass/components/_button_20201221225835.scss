@@ -27,7 +27,6 @@
   }
   &-secondary {
     color: $color-secondary-dark;
-    background-color: $color-white;
     width: 45%;
     margin-right: 2.5rem;
     margin-bottom: 3rem;
@@ -38,6 +37,16 @@
     line-height: 2rem;
     position: relative;
     backface-visibility: hidden;
+
+    &::before {
+      content: 'hi how are';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    }
+    &:hover::before {
+      transform: translateX(-30x);
+    }
   }
 
   &:hover {
