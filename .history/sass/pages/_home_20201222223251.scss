@@ -1,0 +1,30 @@
+.section-features {
+  // background-color: $color-primary;
+  padding-top: 0;
+  margin-top: -16rem;
+}
+.section-services {
+  background-color: $color-background;
+}
+.section-services-tech {
+  background-color: $color-white;
+}
+.section-why-us {
+  background-color: $color-background;
+}
+
+.section-cta {
+  background-image: linear-gradient(
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary-light, 0.8)
+    ),
+    url(../assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-text {
+  color: $color-white;
+  margin-bottom: 4rem;
+  font-size: 23;
+}

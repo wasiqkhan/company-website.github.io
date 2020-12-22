@@ -1,0 +1,15 @@
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
