@@ -1,0 +1,24 @@
+.footer {
+  background-color: $color-background;
+
+  &__info {
+    flex-basis: 35%;
+  }
+
+  &__nav-links {
+    flex-basis: 16%;
+
+    ul {
+      list-style: none;
+      margin-bottom: 3rem;
+
+      li a {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__contact-info {
+    flex-basis: 25%;
+  }
+}

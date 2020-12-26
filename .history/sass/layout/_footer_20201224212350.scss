@@ -1,0 +1,49 @@
+.footer {
+  background-color: $color-background;
+
+  &__heading {
+    font-weight: 400;
+    font-size: $default-font-size;
+    color: $color-secondary-dark;
+    padding: 0 1rem;
+  }
+
+  &__info {
+    flex-basis: 35%;
+  }
+
+  &__nav-links {
+    flex-basis: 16%;
+
+    &-icon {
+      padding: 0 1rem;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 4rem;
+
+      li {
+        padding: 0.3rem 0;
+      }
+
+      li a {
+        color: $color-primary;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: 0.88px;
+
+        &:hover {
+          color: $color-secondary-dark;
+        }
+      }
+    }
+  }
+
+  &__contact-info {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

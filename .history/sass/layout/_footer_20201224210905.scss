@@ -1,0 +1,19 @@
+.footer {
+  background-color: $color-background;
+
+  &__info {
+    flex-basis: 41%;
+  }
+
+  &__nav-links {
+    flex-basis: 16%;
+
+    &-icon {
+      font-weight: 600;
+    }
+  }
+
+  &__contact-info {
+    flex-basis: 25%;
+  }
+}
