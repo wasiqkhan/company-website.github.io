@@ -1,0 +1,9 @@
+.header-sub {
+  height: 55vh;
+  position: relative;
+  background-image: linear-gradient(
+    135deg,
+    $color-primary-dark 0%,
+    $color-primary-light 90%
+  );
+}

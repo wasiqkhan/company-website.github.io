@@ -1,0 +1,93 @@
+.footer {
+  background-color: $color-background;
+  padding-bottom: 6rem;
+
+  &__heading {
+    font-weight: 400;
+    font-size: $default-font-size;
+    color: $color-secondary-dark;
+    letter-spacing: 0.88px;
+    padding: 0 1rem;
+    margin-left: 1.5rem;
+  }
+
+  &__logo {
+    margin-top: -1.5rem;
+  }
+
+  &__info {
+    flex-basis: 35%;
+    margin-left: 2.5rem;
+  }
+
+  &__nav-links {
+    flex-basis: 16%;
+
+    &-icon {
+      padding: 0 1rem;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 0.3rem 0;
+      }
+
+      li a {
+        color: $color-primary;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: 0.88px;
+
+        &:hover {
+          color: $color-secondary-dark;
+        }
+      }
+    }
+  }
+
+  &__contact-info {
+    flex-basis: 25%;
+
+    p {
+      display: block;
+      color: $color-primary;
+      font-size: 1.4rem;
+      line-height: 2.6rem;
+      letter-spacing: 0.88px;
+
+      &:not(:last-child) {
+        margin-bottom: 0.8rem;
+      }
+    }
+  }
+
+  &__social {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        &:nth-child(2) {
+          margin: 0 2rem;
+        }
+      }
+
+      li a {
+        color: $color-primary;
+      }
+    }
+  }
+
+  .copyright {
+    color: $color-primary;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 0.88px;
+    text-align: center;
+    padding-top: 3rem;
+
+    margin-top: 5rem;
+    border-top: 1px solid $color-border-top;
+  }
+}

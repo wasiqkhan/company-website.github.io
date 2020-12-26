@@ -1,0 +1,12 @@
+.header-sub {
+  height: 55vh;
+  position: relative;
+  background-image: linear-gradient(
+      $color-primary-dark 0%,
+      $color-primary-light 100%
+    ),
+    url(../assets/img/header-sub.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

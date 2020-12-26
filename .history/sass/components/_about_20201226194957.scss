@@ -1,0 +1,15 @@
+.about {
+  display: flex;
+  flex-direction: row;
+
+  &__image-back {
+    flex-basis: 70%;
+    &--img {
+      width: 100%;
+      height: 500px;
+    }
+  }
+
+  &__text {
+  }
+}

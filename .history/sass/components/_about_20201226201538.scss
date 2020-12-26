@@ -1,0 +1,35 @@
+.about {
+  display: flex;
+  flex-direction: row;
+
+  &__image-back {
+    flex-basis: 60%;
+    z-index: 1;
+
+    &--img {
+      width: 100%;
+      border-radius: 4rem 5px 4rem 4rem;
+      box-shadow: 0 2px 48px 0 rgba($color-black, 0.06);
+    }
+  }
+
+  &__text {
+    flex-basis: 40%;
+    border-radius: 4rem 5px 4rem 4rem;
+    box-shadow: 0 2px 48px 0 rgba($color-black, 0.06);
+    background-color: $color-white;
+    padding: 3rem;
+    padding-top: 1rem;
+    align-self: center;
+    z-index: 2;
+
+    &--1 {
+      margin-left: -10rem;
+    }
+
+    &--2 {
+      margin-left: 10rem;
+    }
+    // height: 400px;
+  }
+}

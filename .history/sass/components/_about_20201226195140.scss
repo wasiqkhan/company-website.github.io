@@ -1,0 +1,16 @@
+.about {
+  display: flex;
+  flex-direction: row;
+
+  &__image-back {
+    flex-basis: 70%;
+    &--img {
+      width: 100%;
+      border-radius: 4rem 5px 4rem 4rem;
+    }
+  }
+
+  &__text {
+    flex-basis: 30%;
+  }
+}

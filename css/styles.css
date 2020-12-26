@@ -23,6 +23,13 @@ a {
     letter-spacing: 1.75px;
     color: #3b566e; }
 
+.heading-secondary {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 4.6rem; }
+
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 400;
@@ -48,6 +55,13 @@ a {
   line-height: 2.6rem;
   margin-bottom: 2rem; }
 
+.about__heading {
+  color: #333d49;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 1.75px;
+  line-height: 3.8rem; }
+
 *,
 *::after,
 *::before {
@@ -68,19 +82,19 @@ body {
   margin-bottom: 8rem !important; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 2rem !important; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
 
 .u-margin-top-small {
-  margin-top: 2rem; }
+  margin-top: 2rem !important; }
 
 .u-margin-top-medium {
-  margin-top: 4rem; }
+  margin-top: 4rem !important; }
 
 .u-margin-top-large {
-  margin-top: 6rem; }
+  margin-top: 6rem !important; }
 
 .u-margin-top-big {
   margin-top: 8rem !important; }
@@ -222,6 +236,30 @@ body {
   border-bottom: 2px solid #29323c;
   width: 2%; }
 
+.about {
+  display: flex;
+  flex-direction: row; }
+  .about__image-back {
+    flex-basis: 60%;
+    z-index: 1; }
+    .about__image-back--img {
+      width: 100%;
+      border-radius: 4rem 5px 4rem 4rem;
+      box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06); }
+  .about__text {
+    flex-basis: 40%;
+    border-radius: 4rem 5px 4rem 4rem;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    padding: 3rem;
+    padding-top: 1rem;
+    align-self: center;
+    z-index: 2; }
+    .about__text--1 {
+      margin-left: -10rem; }
+    .about__text--2 {
+      margin-right: -10rem; }
+
 .header {
   height: 100vh; }
   .header__logo-box {
@@ -303,7 +341,9 @@ body {
   margin-top: 2rem; }
 
 .footer {
-  background-color: #f7fafd; }
+  background-color: #f7fafd;
+  padding-bottom: 2rem;
+  padding-top: 6rem; }
   .footer__heading {
     font-weight: 400;
     font-size: 1.6rem;
@@ -358,6 +398,27 @@ body {
     padding-top: 3rem;
     margin-top: 5rem;
     border-top: 1px solid #dae6fd; }
+
+.cover {
+  height: 55vh;
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(72, 85, 99, 0.8), rgba(41, 50, 60, 0.8)), url(../assets/img/header-sub.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .cover__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1rem; }
+    .cover__links a {
+      color: #fff;
+      font-weight: 400;
+      font-size: 1.4rem; }
 
 .section-features {
   padding-top: 0;

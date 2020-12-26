@@ -1,0 +1,9 @@
+.header-sub {
+  height: 55vh;
+  position: relative;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary-light, 0.4),
+    rgba($color-primary-dark, 0.4)
+  );
+}

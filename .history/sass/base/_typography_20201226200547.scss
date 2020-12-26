@@ -1,0 +1,75 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  background-color: $color-white;
+  color: $color-primary;
+}
+
+a {
+  text-decoration: none !important;
+}
+.heading-primary {
+  font-size: 2.8rem;
+  font-weight: 400;
+
+  &--main {
+    display: block;
+    line-height: 4.6rem;
+    letter-spacing: 0.93px;
+    color: $color-tertiary-dark;
+  }
+  &--sub {
+    display: block;
+    line-height: 4.6rem;
+    letter-spacing: 1.75px;
+    color: $color-secondary-light;
+  }
+}
+
+.heading-secondary {
+  color: $color-white;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: 1.4px;
+  line-height: 4.6rem;
+}
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 400;
+  color: $color-secondary-light;
+  letter-spacing: 0.7px;
+  margin-bottom: 1.5rem;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  font-weight: 400;
+  font-family: inherit;
+  letter-spacing: 1px;
+  line-height: 2.8rem;
+  color: $color-primary;
+
+  &:not(:last-child) {
+    margin-top: 3rem;
+  }
+}
+
+.paragraph-features {
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $color-primary;
+  letter-spacing: 0.88px;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+.about__heading {
+  color: $color-secondary-dark;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 1.75px;
+  line-height: 3.8rem;
+  padding: 1rem;
+}
