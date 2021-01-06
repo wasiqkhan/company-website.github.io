@@ -5,3 +5,53 @@
     clear: both;
   }
 }
+
+@mixin heading($co) {
+  color: $co;
+  font-weight: 400;
+  font-size: 2.4rem;
+  letter-spacing: 1.75px;
+  line-height: 3.8rem;
+}
+
+/* Media Queries
+0-600px: Phone
+600-900px: Tablet Portrait
+900-1200px: Tablet Landscape
+[1200px - 1800px]: normal styles
+1800px +: Big Desktop Screens
+
+
+$breakpoints:
+- phone
+- tab-port
+- tab-land
+- big-desk
+*/
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    //600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    //900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desk {
+    //1800px+
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

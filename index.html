@@ -21,11 +21,32 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-                    <li class="nav__item"><a class="nav__link" href="#">Services</a></li>
+                    <li class="nav__item "><a class="nav__link dropdown" href="#">Services
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+
+                    <ul class="dropdown-content">
+                        <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Technology
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <ul class="dropdown-content dropdown-content-sub">
+                            <li class="dropdown-content__item"><a class="dropdown-content__link" href="./web-development.html">Web Design & Development
+                            </a>
+                        </li>
+                        <li class="dropdown-content__item"><a class="dropdown-content__link" href="./mobile-development.html">Mobile Application Development</a></li>
+         
+                        </ul>
+                    
+                    </li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Business</a></li>
+                    </ul>
+               
+                
+                </li>
                     <li class="nav__item"><a class="nav__link" href="/about-us.html">About Us</a></li>
                     <li class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
                 </ul>
-                <a class="nav__cta" href="#">Call Us at </a>
+                <!-- <a class="nav__cta" href="#">Call Us at </a> -->
             </div>
             </div>
         </nav>
@@ -44,7 +65,7 @@
                 </a>
             </div>
             <div class="header__hero">
-                <img src="./assets/img/Going up-cuate.png" alt="hero" class="header__hero-img">
+                <img src="./assets/img/hero.png" alt="hero" class="header__hero-img">
             </div>
         </div>
     </div>
@@ -87,7 +108,7 @@
         <section class="section-services section">
             <div class="container">
                 <div class="content">
-                <div class="services flex-basis-40">
+                <div class="services">
                 <h1 class="heading-primary heading-primary--sub">Business Services</h1>
                 <p class="paragraph u-margin-top-small">
                     Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.
@@ -151,36 +172,37 @@
                 <div class="services-items">
                     <a href="" class="btn btn-secondary active" style="color: white;">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Website Design</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Website Development</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Web Application</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span class="btn-secondary__text">Mobile App Design</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>iOS Development</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Android Applications</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Custom Applications</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span class="btn-secondary__text">Proposal Writingg</span>
+                        <span>Maintainance</span>
                     </a>
+                   
                 </div>
 
             </div>
@@ -194,7 +216,7 @@
             <div class="container">
                 <div class="content-center">
                     <h1 class="heading-primary heading-primary--sub">Why Choose Us</h1>
-                    <div class="features u-margin-top-large">
+                    <div class="content u-margin-top-large">
                         <div class="features-item features-item__rect">
                             <div class="features-item__heading">
                                 <h3 class="features-item__heading--main">Technology</h3>
@@ -245,104 +267,109 @@
     <footer class="footer">
         <div class="container">
             <div class="content">
-                <div class="flex-basis-35 footer__logo">
-                    <img src="./assets/img/LOGOBLACK.png" alt="logo" class="header__logo">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="./assets/img/LOGOBLACK.png" alt="logo" class="header__logo">
+                    </div>
+                    <div class="footer__info--text">
+                    
+                        <p class="paragraph">
+                            Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex-basis-16">
+                <div class="footer__box">
+                <div class="footer__links">
                     <h5 class="footer__heading">Helpful Links</h5>
+                         <div class="footer__nav-links">
+            <ul>
+                <li><a href="#">
+                    <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                    Home
+                </a>
+            </li>
+            <li><a href="#">
+                <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                About Us
+            </a>
+        </li>
+        <li><a href="#">
+            <i class="fas fa-angle-right footer__nav-links-icon"></i>
+            Services
+        </a>
+    </li>
+    <li><a href="#">
+        <i class="fas fa-angle-right footer__nav-links-icon"></i>
+        Contact
+    </a>
+</li>
+                
+            </ul>
+        </div>
                 </div>
-                <div class="flex-basis-16">
+                <div class="footer__links">
                     <h5 class="footer__heading">Services</h5>
-                </div>
-                <div class="flex-basis-25">
-                    <h5 class="footer__heading">Contact</h5>
-                </div>
-            </div>
-           <div class="content">
-            <div class="footer__info">
-                
-                <p class="paragraph">
-                    Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.
-                </p>
-            </div>
-            <div class="footer__nav-links">
-     
-            <ul>
-                <li><a href="#">
-                    <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                    Home
-                </a>
-            </li>
-            <li><a href="#">
-                <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                About Us
-            </a>
-        </li>
-        <li><a href="#">
-            <i class="fas fa-angle-right footer__nav-links-icon"></i>
-            Services
-        </a>
-    </li>
-    <li><a href="#">
-        <i class="fas fa-angle-right footer__nav-links-icon"></i>
-        Contact
-    </a>
-</li>
-                
-            </ul>
-        </div>
-        <div class="footer__nav-links">
+                    <div class="footer__nav-links">
     
-            <ul>
+                        <ul>
+                            <li><a href="#">
+                                <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li><a href="#">
+                            <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                        Services
+                    </a>
+                </li>
                 <li><a href="#">
                     <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                    Home
+                    Contact
                 </a>
             </li>
-            <li><a href="#">
-                <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                About Us
-            </a>
-        </li>
-        <li><a href="#">
-            <i class="fas fa-angle-right footer__nav-links-icon"></i>
-            Services
-        </a>
-    </li>
-    <li><a href="#">
-        <i class="fas fa-angle-right footer__nav-links-icon"></i>
-        Contact
-    </a>
-</li>
-            </ul>
-        </div>
-        <div class="footer__contact-info">
+                        </ul>
+                    </div>
+                  
+                </div>
+            </div>
+                <div class="footer__links">
+                    <h5 class="footer__heading">Contact</h5>
+                    <div class="footer__contact-info">
        
-            <p>E-Mail: <span style="color: #333d49 ;">contact@website.com</span></p>
-            <div class="footer__social">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-            <!-- <p>aksldjfasklj@klsjdka.com</p>
-            <p>023423904823092</p>
-            <p>kabul asdkfjaskljkl</p> -->
-        </div>
-           </div>
+                        <p>E-Mail: <span style="color: #333d49 ;">contact@website.com</span></p>
+                        <div class="footer__social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        <!-- <p>aksldjfasklj@klsjdka.com</p>
+                        <p>023423904823092</p>
+                        <p>kabul asdkfjaskljkl</p> -->
+                    </div>
+                </div>
+                
+              
+            </div>
+          
            <p class="copyright">
             © 2020 Website. All Rights Reserved.
            </p>

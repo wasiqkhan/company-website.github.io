@@ -6,9 +6,26 @@
   box-sizing: inherit;
 }
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; // 1rem = 10px
+
+  @include responsive(tab-land) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+
+  @include responsive(tab-port) {
+    font-size: 50%; // 1rem = 8px
+  }
+
+  @include responsive(big-desk) {
+    font-size: 75%; // 1rem = 12px
+  }
 }
 
 body {
   box-sizing: border-box;
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
 }

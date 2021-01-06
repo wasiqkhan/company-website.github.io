@@ -43,6 +43,11 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.extend-heading-tertiary {
+  @extend .heading-tertiary;
+  font-weight: 700;
+}
+
 .paragraph {
   font-size: $default-font-size;
   font-weight: 400;
@@ -66,9 +71,8 @@ a {
 }
 
 .about__heading {
-  color: $color-secondary-dark;
-  font-weight: 400;
-  font-size: 2.4rem;
-  letter-spacing: 1.75px;
-  line-height: 3.8rem;
+  @include heading($color-secondary-dark);
+}
+.contact-box__heading {
+  @include heading($color-white);
 }

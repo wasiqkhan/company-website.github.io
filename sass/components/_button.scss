@@ -25,6 +25,7 @@
       $color-primary-light 100%
     );
   }
+
   &-secondary {
     color: $color-secondary-dark;
     background-color: $color-white;
@@ -38,6 +39,18 @@
     line-height: 2rem;
     position: relative;
     backface-visibility: hidden;
+
+    @include responsive(phone) {
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      line-height: 1.3rem;
+    }
+  }
+  &-ter {
+    @extend .btn-secondary;
+    padding: 3.5rem 0 2rem 0 !important;
+    text-align: center;
+    cursor: none;
   }
   &-white {
     color: $color-secondary-dark;

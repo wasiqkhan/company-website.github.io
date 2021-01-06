@@ -15,17 +15,27 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  @include responsive(tab-land) {
+    height: 30vh;
+  }
+  @include responsive(tab-port) {
+    height: 30vh;
+  }
+  @include responsive(phone) {
+    height: 30vh;
+  }
 
   &__links {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 1rem;
 
     a {
       color: $color-white;
       font-weight: 400;
       font-size: 1.4rem;
+      padding: 0 0.5rem;
     }
   }
 }

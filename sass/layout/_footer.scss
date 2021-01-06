@@ -2,6 +2,10 @@
   background-color: $color-background;
   padding-bottom: 2rem;
   padding-top: 6rem;
+  @include responsive(phone) {
+    padding: 0 1rem;
+    padding-top: 6rem;
+  }
 
   &__heading {
     font-weight: 400;
@@ -9,7 +13,6 @@
     color: $color-secondary-dark;
     letter-spacing: 0.88px;
     padding: 0 1rem;
-    margin-left: 1.5rem;
   }
 
   &__logo {
@@ -17,19 +20,45 @@
   }
 
   &__info {
+    display: flex;
+    flex-direction: column;
     flex-basis: 35%;
-    margin-left: 2.5rem;
+    // flex-basis: 35%;
+    // margin-left: -5.5rem;
+    &--text {
+      @include responsive(phone) {
+        padding: 0 1rem;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 25%;
+
+    @include responsive(phone) {
+      justify-content: flex-start;
+      margin-top: 2rem;
+    }
+  }
+
+  &__links {
+    @include responsive(phone) {
+      &:nth-child(2) {
+        padding: 0 6rem;
+      }
+    }
   }
 
   &__nav-links {
-    flex-basis: 16%;
-
     &-icon {
       padding: 0 1rem;
     }
 
     ul {
       list-style: none;
+      padding: 2.8rem 0;
 
       li {
         padding: 0.3rem 0;
@@ -49,7 +78,8 @@
   }
 
   &__contact-info {
-    flex-basis: 25%;
+    // flex-basis: 25%;
+    padding-top: 2.8rem;
 
     p {
       display: block;
@@ -57,14 +87,17 @@
       font-size: 1.4rem;
       line-height: 2.6rem;
       letter-spacing: 0.88px;
-
-      &:not(:last-child) {
-        margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
+      @include responsive(phone) {
+        padding: 0 1rem;
       }
     }
   }
 
   &__social {
+    @include responsive(phone) {
+      padding: 0 1rem;
+    }
     ul {
       list-style: none;
       li {

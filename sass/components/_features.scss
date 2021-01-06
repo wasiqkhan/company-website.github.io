@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  // @include responsive(phone) {
+  //   flex-direction: column;
+  // }
 }
 
 .features-item {
@@ -31,6 +35,15 @@
 
     &:hover > * {
       color: $color-white;
+    }
+    @include responsive(phone) {
+      border-radius: 2rem 0 2rem 2rem;
+      padding: 1rem;
+      flex-basis: auto;
+      text-align: center;
+      p {
+        display: none;
+      }
     }
   }
 
@@ -84,9 +97,18 @@
     background-color: $color-white-gray-2;
     border-radius: 2.2rem 0 2.2rem 2.2rem;
 
+    @include responsive(phone) {
+      width: 4.7rem;
+      height: 4.7rem;
+      line-height: 5.5rem;
+    }
+
     i {
       font-size: 2.8rem;
       color: $color-secondary-dark;
+      @include responsive(phone) {
+        font-size: 2rem;
+      }
     }
   }
 }

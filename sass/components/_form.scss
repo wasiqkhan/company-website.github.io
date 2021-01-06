@@ -1,0 +1,99 @@
+.form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  flex-wrap: wrap;
+  color: $color-secondary-dark;
+
+  @include responsive(phone) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__group {
+    width: 50%;
+    padding-right: 3rem;
+    &__group:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    font-size: 1.4rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1.5rem 3rem;
+    background-color: rgba($color-white, 1);
+    border-radius: 2px;
+    border: 1px solid $color-border-top;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid #55c57a;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-dark-grey-2;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid orangered;
+    }
+  }
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__group-textarea {
+    flex-basis: 100%;
+    margin-top: 2rem;
+
+    @include responsive(phone) {
+      width: 100%;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    border: 1px solid $color-border-top;
+    font-family: inherit;
+    font-size: 1.4rem;
+    padding: 1.5rem 3rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid #55c57a;
+    }
+    &::-webkit-input-placeholder {
+      color: $color-dark-grey-2;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid orangered;
+    }
+  }
+
+  &__textarea:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem);
+  }
+}

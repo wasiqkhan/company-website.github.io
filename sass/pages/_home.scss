@@ -15,12 +15,12 @@
 
 .section-cta {
   background-image: linear-gradient(
-      rgba($color-primary-dark, 0.8),
-      rgba($color-primary-light, 0.8)
+      rgba($color-primary-dark, 0.9),
+      rgba($color-primary-light, 0.9)
     ),
-    url(../assets/img/header.jpg);
+    url(../assets/img/header-sub.jpg);
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 .cta {
   text-align: center;
@@ -30,4 +30,13 @@
   margin-bottom: 4rem;
   font-size: 2.5rem;
   display: block;
+  @include responsive(phone) {
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+  }
+}
+
+.section-contact {
+  background-color: $color-white;
 }
