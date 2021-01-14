@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/icon-font.css">
+    
  
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
@@ -16,18 +17,29 @@
         <nav class="nav">
             <div class="container">
                 <div class="nav__items">
+                      
+                    <!-- <input type="checkbox" id="check" class="nav__checkbtn"> -->
+                    <!-- <label for="check" class="nav__trigger"> -->
+                        <a href="#" class="nav__trigger">
+                            <i class="fa fa-bars" id="trigger"></i>
+                        </a>
+                        
+                    <!-- </label> -->
+                        
+                   
+                
                 <div class="header__logo-box">
                     <img src="./assets/img/LOGOBLACK.png" alt="logo" class="header__logo">
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="#">Home</a></li>
                     <li class="nav__item "><a class="nav__link dropdown" href="#">Services
-                        <i class="fa fa-caret-down"></i>
+                        <i onclick="change(this)" class="fa fa-caret-down nav__link--arrow"></i>
                     </a>
 
                     <ul class="dropdown-content">
                         <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Technology
-                            <i class="fa fa-caret-right"></i>
+                            <i onclick="change(this)" class="fa fa-caret-right nav__link--arrow dropdown-content__link--arrow"></i>
                         </a>
                         <ul class="dropdown-content dropdown-content-sub">
                             <li class="dropdown-content__item"><a class="dropdown-content__link" href="./web-development.html">Web Design & Development
@@ -38,8 +50,23 @@
                     </ul>
                     
                     </li>
-                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Business</a></li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Business
+                        <i onclick="change(this)" class="fa fa-caret-right nav__link--arrow dropdown-content__link--arrow"></i>
+                    </a>
+                    <ul class="dropdown-content dropdown-content-sub">
+                        <li class="dropdown-content__item"><a class="dropdown-content__link" href="./web-development.html">Business Plan
+                        </a>
+                    </li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="./mobile-development.html">Proposal Development</a></li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="./mobile-development.html">Impact Assesment</a></li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="./mobile-development.html">Research</a></li>
+     
+                </ul>
+                
+                </li>
+                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Translation</a></li>
                     </ul>
+                    
                
                 
                 </li>
@@ -47,11 +74,20 @@
                     <li class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
                 </ul>
                 <!-- <a class="nav__cta" href="#">Call Us at </a> -->
+             
             </div>
+            
             </div>
         </nav>
+        <!-- <div class="nav-sub">
+            <h3>asdfk</h3>
+            <h3>sdf</h3>
+            <h3>sd</h3>
+            <h3>sdlfkajskl</h3>
+            <h3>sldfkj</h3>
+        </div> -->
         <div class="container">
-        <div class="content u-margin-top-big">
+        <div class="header__content u-margin-top-big">
             <div class="header__text-box u-margin-top-large">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Industry Leading Managed Services and Staffing Solutions</span>
@@ -120,31 +156,31 @@
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Business Planning</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Research</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Impact Assesments</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Report Writing</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Handbooks & Manuals</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span>Proposal Writing</span>
+                        <span>Brochure Designing</span>
                     </a>
                     <a href="" class="btn btn-secondary">
                         <i class="fas fa-angle-right"></i>
-                        <span class="btn-secondary__text">Proposal Writingg</span>
+                        <span class="btn-secondary__text">Consulting</span>
                     </a>
                 </div>
 
@@ -375,5 +411,6 @@
            </p>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 </html>

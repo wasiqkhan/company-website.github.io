@@ -33,6 +33,10 @@
   flex-direction: column;
   align-items: flex-start;
   flex-basis: 45%;
+  @include responsive(tab-port) {
+    flex-basis: 60%;
+    padding: 0 1rem;
+  }
 
   @include responsive(phone) {
     align-items: center;

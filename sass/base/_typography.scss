@@ -25,6 +25,9 @@ a {
     line-height: 4.6rem;
     letter-spacing: 1.75px;
     color: $color-secondary-light;
+    @include responsive(phone) {
+      margin-top: 4rem !important;
+    }
   }
 }
 
@@ -58,6 +61,10 @@ a {
 
   &:not(:last-child) {
     margin-top: 3rem;
+  }
+
+  @include responsive(phone) {
+    padding: 0 1rem;
   }
 }
 

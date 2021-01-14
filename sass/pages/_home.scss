@@ -2,6 +2,15 @@
   // background-color: $color-primary;
   padding-top: 0;
   margin-top: -16rem;
+  @include responsive(tab-land) {
+    margin-top: -30rem;
+  }
+  @include responsive(tab-port) {
+    margin-top: -20rem;
+  }
+  @include responsive(phone) {
+    display: none;
+  }
 }
 .section-services {
   background-color: $color-background;

@@ -2,7 +2,6 @@
   &,
   &:link,
   &:visited {
-    padding: 1rem 2.5rem;
     border-radius: 3rem 0 3rem 3rem;
     display: inline-block;
     transition: all 0.3s;
@@ -13,6 +12,7 @@
   }
 
   &-primary {
+    padding: 1rem 2.5rem;
     color: $color-white;
     font-size: 1.2rem;
     letter-spacing: 0.75px;
@@ -27,6 +27,7 @@
   }
 
   &-secondary {
+    padding: 1rem 2.5rem;
     color: $color-secondary-dark;
     background-color: $color-white;
     width: 45%;
@@ -39,6 +40,13 @@
     line-height: 2rem;
     position: relative;
     backface-visibility: hidden;
+    @include responsive(tab-land) {
+      margin-right: 1.5rem;
+    }
+
+    @include responsive(tab-port) {
+      margin-right: 1.5rem;
+    }
 
     @include responsive(phone) {
       margin: 0 auto;
@@ -55,6 +63,7 @@
   &-white {
     color: $color-secondary-dark;
     background-color: $color-white;
+    padding: 1rem 2.5rem;
     font-weight: 600;
     line-height: 2rem;
     letter-spacing: 0.88px;

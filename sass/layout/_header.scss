@@ -1,6 +1,11 @@
 .header {
   height: 100vh;
-
+  @include responsive(tab-port) {
+    height: 80vh;
+  }
+  @include responsive(phone) {
+    height: 100vh;
+  }
   &__logo-box {
     margin-top: 1.2rem;
     margin-left: 2rem;
@@ -9,13 +14,32 @@
   &__logo {
     height: 6.5rem;
   }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    @include responsive(phone) {
+      flex-direction: column;
+    }
+  }
 
   &__text-box {
     flex-basis: 40%;
     margin-top: 15rem;
+    @include responsive(tab-land) {
+      width: 50%;
+      padding-top: 10rem;
+    }
+    @include responsive(tab-port) {
+      margin: 0 auto;
+      padding-top: 10rem;
+      width: 50%;
+    }
     @include responsive(phone) {
       margin: 0 auto;
       text-align: center;
+      width: 100%;
     }
   }
 
@@ -37,9 +61,13 @@
 
   &__items {
     display: flex;
-    justify-content: flex-start;
-
+    justify-content: space-around;
     align-items: center;
+
+    @include responsive(tab-port) {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
   }
 
   &__list {
@@ -49,11 +77,32 @@
     & li:hover > ul {
       display: block;
     }
+
+    @include responsive(tab-port) {
+      display: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 8rem;
+      background-color: $color-white;
+      transition: all 0.3s ease-in;
+    }
   }
 
   &__item {
     display: inline-block;
     padding: 0 2rem;
+    // position: relative;
+
+    @include responsive(tab-port) {
+      display: block;
+      width: 100%;
+
+      padding: 1rem 2rem;
+      &:not(:last-child) {
+        border-bottom: 0.5px solid $color-border-top;
+      }
+    }
   }
   &__link {
     color: $color-primary;
@@ -61,10 +110,26 @@
     font-size: 1.4rem;
     line-height: 4rem;
     letter-spacing: 1px;
+
+    &--arrow {
+      @include responsive(tab-port) {
+        float: right;
+        font-size: 20px;
+      }
+    }
   }
 
   &__cta {
     color: $color-primary;
+  }
+  &__trigger {
+    display: none;
+    color: $color-primary;
+    margin-right: 1rem;
+
+    @include responsive(tab-port) {
+      display: block;
+    }
   }
 }
 .dropdown {
@@ -73,7 +138,7 @@
 
 .dropdown-content {
   display: none;
-  background-color: $color-white;
+  background-color: $color-white-gray;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   position: absolute;
@@ -87,23 +152,43 @@
     min-width: 20rem;
   }
 
+  @include responsive(tab-port) {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+  }
+
   &__item {
     padding: 1rem;
 
     transition: all 0.2s;
-    border-bottom: 1px solid $color-border-top;
+
     width: 100%;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-border-top;
+    }
     &:hover {
       background-color: #f5f5f5;
       border-left: 3px solid $color-primary-dark;
     }
+    @include responsive(tab-port) {
+      &:hover {
+        border-left: none;
+        background-color: $color-white-gray;
+      }
+    }
   }
   &__link {
-    color: $color-secondary-dark;
+    color: $color-primary;
     font-weight: 600;
     font-size: 1.3rem;
     line-height: 2rem;
     letter-spacing: 0.88px;
     width: 100%;
   }
+}
+
+.show {
+  display: block;
 }
