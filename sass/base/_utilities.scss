@@ -50,5 +50,8 @@
     $color-primary-dark,
     $color-primary-light 100%
   );
-  color: $color-white;
+  color: $color-white !important;
+}
+.u-color-white {
+  color: $color-white !important;
 }

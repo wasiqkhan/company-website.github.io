@@ -21,6 +21,10 @@
     padding: 2rem;
   }
 }
+.extend-service-info {
+  @extend .service-info;
+  flex-basis: 60%;
+}
 
 .service-features {
   display: flex;

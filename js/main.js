@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     document.querySelector('.nav__trigger').addEventListener('click',triggerNav);
 
 
+
 });
 
 function triggerNav(ev){
@@ -23,9 +24,9 @@ function toggleArrows(nav){
     let arrows=document.querySelectorAll('.dropdown-content__link--arrow');
     arrows.forEach((arrow)=>{
         if(nav.classList.contains('show')){
-            arrow.className='fa fa-caret-down nav__link--arrow dropdown-content__link--arrow';
+            arrow.className='fas fa-angle-down nav__link--arrow dropdown-content__link--arrow';
         }else{
-            arrow.className='fa fa-caret-right nav__link--arrow dropdown-content__link--arrow';
+            arrow.className='fa fa-angle-right nav__link--arrow dropdown-content__link--arrow';
             
         }
 
@@ -35,7 +36,5 @@ function toggleArrows(nav){
 function change(dropdown){
     let parent=dropdown.parentElement;   //parent of the i which is a
     parent.nextElementSibling.classList.toggle('show'); //  ul which is the dropdown
-    dropdown.classList.toggle('fa-caret-up');
-    
-
+    dropdown.classList.toggle('fa-angle-up');
 }

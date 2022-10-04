@@ -1,0 +1,41 @@
+.tab-container {
+  flex-basis: 30%;
+  background-color: $color-white;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 4.8rem 0 rgba($color-black, 0.06);
+  margin-bottom: 3rem;
+
+  @include responsive(phone) {
+    margin: 2rem;
+  }
+  // padding: 1rem 2rem;
+
+  &__tabs {
+    list-style: none;
+
+    &--tab {
+      &:not(:last-child) {
+        border-bottom: 1px solid $color-border-top;
+      }
+      transition: all 0.3s;
+      &:hover {
+        transform: translateX(4px);
+      }
+
+      a {
+        position: relative;
+        padding-left: 3.6rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: 0.88px;
+        line-height: 5.9rem;
+        color: $color-primary;
+
+        i {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+}

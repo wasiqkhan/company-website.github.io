@@ -165,7 +165,10 @@ body {
 
 .active {
   background-image: linear-gradient(135deg, #29323c, #485563 100%);
-  color: #fff; }
+  color: #fff !important; }
+
+.u-color-white {
+  color: #fff !important; }
 
 .features {
   display: flex;
@@ -461,6 +464,35 @@ body {
     visibility: hidden;
     transform: translateY(-2rem); }
 
+.tab-container {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 2px 4.8rem 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .tab-container {
+      margin: 2rem; } }
+  .tab-container__tabs {
+    list-style: none; }
+    .tab-container__tabs--tab {
+      transition: all 0.3s; }
+      .tab-container__tabs--tab:not(:last-child) {
+        border-bottom: 1px solid #dae6fd; }
+      .tab-container__tabs--tab:hover {
+        transform: translateX(4px); }
+      .tab-container__tabs--tab a {
+        position: relative;
+        padding-left: 3.6rem;
+        font-weight: 400;
+        font-size: 1.4rem;
+        letter-spacing: 0.88px;
+        line-height: 5.9rem;
+        color: #6f8ba4; }
+        .tab-container__tabs--tab a i {
+          margin-right: 3rem; }
+
 .header {
   height: 100vh; }
   @media only screen and (max-width: 56.25em) {
@@ -549,8 +581,7 @@ body {
     letter-spacing: 1px; }
     @media only screen and (max-width: 56.25em) {
       .nav__link--arrow {
-        float: right;
-        font-size: 20px; } }
+        float: right; } }
   .nav__cta {
     color: #6f8ba4; }
   .nav__trigger {
@@ -834,16 +865,19 @@ body {
       flex-wrap: wrap; } }
 
 @media only screen and (max-width: 75em) {
-  .service-info {
+  .service-info, .extend-service-info {
     padding: 2rem; } }
 
 @media only screen and (max-width: 56.25em) {
-  .service-info {
+  .service-info, .extend-service-info {
     padding: 2rem; } }
 
 @media only screen and (max-width: 37.5em) {
-  .service-info {
+  .service-info, .extend-service-info {
     padding: 2rem; } }
+
+.extend-service-info {
+  flex-basis: 60%; }
 
 .service-features {
   display: flex;
