@@ -1,243 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"> 
-        <link rel="stylesheet" href="./css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header-sub">
-        <nav class="nav">
-            <div class="container">
-                <div class="nav__items">
-                    
-                        <a href="#" class="nav__trigger">
-                            <i class="fa fa-bars" id="trigger"></i>
-                        </a>
-                 
-                <div class="header__logo-box">
-                    <img src="./assets/img/LOGOBLACK.png" alt="logo" class="header__logo">
-                </div>
-                <ul class="nav__list">
-                    <li class="nav__item"><a class="nav__link" href="./index.html">Home</a></li>
-                    <li class="nav__item "><a class="nav__link dropdown" href="#">Services
-                        <i onclick="change(this)" class="fas fa-angle-down nav__link--arrow"></i>
-                    </a>
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__items">
+            <a href="#" class="nav__trigger">
+              <i class="fa fa-bars" id="trigger"></i>
+            </a>
 
-                    <ul class="dropdown-content">
-                        <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Technology
-                            <i onclick="change(this)" class="fas fa-angle-right nav__link--arrow dropdown-content__link--arrow"></i>
-                        </a>
-                        <ul class="dropdown-content dropdown-content-sub">
-                            <li class="dropdown-content__item"><a class="dropdown-content__link" href="./web-development.html">Web Design & Development
-                            </a>
-                        </li>
-                        <li class="dropdown-content__item"><a class="dropdown-content__link" href="./mobile-development.html">Mobile Application Development</a></li>
-         
-                    </ul>
-                    
-                    </li>
-                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="./proposal-development.html">Business
-                       
+            <div class="header__logo-box">
+              <img
+                src="./assets/img/LOGOBLACK.png"
+                alt="logo"
+                class="header__logo"
+              />
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link dropdown" href="#"
+                  >Services
+                  <i
+                    onclick="change(this)"
+                    class="fas fa-angle-down nav__link--arrow"
+                  ></i>
+                </a>
+
+                <ul class="dropdown-content">
+                  <li class="dropdown-content__item">
+                    <a class="dropdown-content__link" href="#"
+                      >Technology
+                      <i
+                        onclick="change(this)"
+                        class="fas fa-angle-right nav__link--arrow dropdown-content__link--arrow"
+                      ></i>
                     </a>
-                   
-                
-                </li>
-                    <li class="dropdown-content__item"><a class="dropdown-content__link" href="#">Translation</a></li>
+                    <ul class="dropdown-content dropdown-content-sub">
+                      <li class="dropdown-content__item">
+                        <a
+                          class="dropdown-content__link"
+                          href="./web-development.html"
+                          >Web Design & Development
+                        </a>
+                      </li>
+                      <li class="dropdown-content__item">
+                        <a
+                          class="dropdown-content__link"
+                          href="./mobile-development.html"
+                          >Mobile Application Development</a
+                        >
+                      </li>
                     </ul>
-                    
-               
-                
-                </li>
-                    <li class="nav__item"><a class="nav__link" href="/about-us.html">About Us</a></li>
-                    <li class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></li>
+                  </li>
+                  <li class="dropdown-content__item">
+                    <a
+                      class="dropdown-content__link"
+                      href="./proposal-development.html"
+                      >Business
+                    </a>
+                  </li>
+                  <!-- <li class="dropdown-content__item">
+                    <a class="dropdown-content__link" href="#">Translation</a>
+                  </li> -->
                 </ul>
-         
-            </div>
-            
-            </div>
-        </nav>
-       
-        
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="/about-us.html">About Us</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-    <section class="cover">
+      <section class="cover">
         <div class="container">
-            <div class="u-margin-top-big">
-                <h1 class="heading-secondary">Contact Us</h1>
-                <div class="cover__links">
-                    <a href="/index.html">Home</a>
-                    <a href="">
-                        <i class="fas fa-angle-right"></i>
+          <div class="u-margin-top-big">
+            <h1 class="heading-secondary">Contact Us</h1>
+            <div class="cover__links">
+              <a href="/index.html">Home</a>
+              <a href="">
+                <i class="fas fa-angle-right"></i>
+              </a>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact section">
+        <div class="container">
+          <div class="contact-box">
+            <div class="contact-box__info">
+              <h2 class="contact-box__heading u-margin-bottom-small">
+                Get in touch
+              </h2>
+              <h5>contact@website.com</h5>
+              <h5>(212) 329 232 423</h5>
+              <h5>(212) 329 232 423</h5>
+              <div class="footer__social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#">Contact Us</a>
-                </div>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+            <form class="form">
+              <div class="form__group">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Full name"
+                  id="name"
+                  required
+                />
+                <label for="name" class="form__label">Full name</label>
+              </div>
+              <div class="form__group">
+                <input
+                  type="email"
+                  class="form__input"
+                  placeholder="Email address"
+                  id="email"
+                  required
+                />
+                <label for="email" class="form__label">Email address</label>
+              </div>
+              <div class="form__group-textarea">
+                <textarea
+                  rows="5"
+                  class="form__textarea"
+                  placeholder="Your message"
+                  id="message"
+                  required
+                ></textarea>
+                <label for="message" class="form__label">Your message</label>
+              </div>
+
+              <button type="submit" value="Send" class="btn btn-primary">
+                Send
+              </button>
+            </form>
+          </div>
         </div>
-    </section>
-
-    <section class="section-contact section">
-        <div class="container">
-            <div class="contact-box">
-                <div class="contact-box__info">
-                    <h2 class="contact-box__heading u-margin-bottom-small">Get in touch</h2>
-                    <h5>contact@website.com</h5>
-                    <h5>(212) 329 232 423</h5>
-                    <h5>(212) 329 232 423</h5>
-                    <div class="footer__social">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <form class="form">
-                    
-                    <div class="form__group">
-                        <input type="text" class="form__input" placeholder="Full name" id="name" required>
-                        <label for="name" class="form__label">Full name</label>
-                    </div>
-                    <div class="form__group">
-                        <input type="email" class="form__input" placeholder="Email address" id="email" required>
-                        <label for="email" class="form__label">Email address</label>
-                    </div>
-                    <div class="form__group-textarea">
-                        <textarea rows="5"  class="form__textarea" placeholder="Your message" id="message" required></textarea>
-                        <label for="message" class="form__label">Your message</label>
-                    </div>
-
-                    <button type="submit" value="Send" class="btn btn-primary">Send</button>
-                </form>
-            </div>
-        </div>
-    </section>
-</main>
-   
-
+      </section>
+    </main>
     <footer class="footer">
-        <div class="container">
-            <div class="content">
-                <div class="flex-basis-35 footer__logo">
-                    <img src="./assets/img/LOGOBLACK.png" alt="logo" class="header__logo">
-                </div>
-                <div class="flex-basis-16">
-                    <h5 class="footer__heading">Helpful Links</h5>
-                </div>
-                <div class="flex-basis-16">
-                    <h5 class="footer__heading">Services</h5>
-                </div>
-                <div class="flex-basis-25">
-                    <h5 class="footer__heading">Contact</h5>
-                </div>
+      <div class="container">
+        <div class="content">
+          <div class="footer__info">
+            <div class="footer__logo">
+              <img
+                src="./assets/img/LOGOBLACK.png"
+                alt="logo"
+                class="header__logo"
+              />
             </div>
-           <div class="content">
-            <div class="footer__info">
-                
-                <p class="paragraph">
-                    Proven methods to capture business priorities and goals as well as current pain points that enables measurable business outcomes.
-                </p>
+            <div class="footer__info--text">
+              <p class="paragraph">
+                Proven methods to capture business priorities and goals as well
+                as current pain points that enables measurable business
+                outcomes.
+              </p>
             </div>
-            <div class="footer__nav-links">
-     
-            <ul>
-                <li><a href="#">
-                    <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                    Home
-                </a>
-            </li>
-            <li><a href="#">
-                <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                About Us
-            </a>
-        </li>
-        <li><a href="#">
-            <i class="fas fa-angle-right footer__nav-links-icon"></i>
-            Services
-        </a>
-    </li>
-    <li><a href="#">
-        <i class="fas fa-angle-right footer__nav-links-icon"></i>
-        Contact
-    </a>
-</li>
-                
-            </ul>
-        </div>
-        <div class="footer__nav-links">
-    
-            <ul>
-                <li><a href="#">
-                    <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                    Home
-                </a>
-            </li>
-            <li><a href="#">
-                <i class="fas fa-angle-right footer__nav-links-icon"></i>
-                About Us
-            </a>
-        </li>
-        <li><a href="#">
-            <i class="fas fa-angle-right footer__nav-links-icon"></i>
-            Services
-        </a>
-    </li>
-    <li><a href="#">
-        <i class="fas fa-angle-right footer__nav-links-icon"></i>
-        Contact
-    </a>
-</li>
-            </ul>
-        </div>
-        <div class="footer__contact-info">
-       
-            <p>E-Mail: <span style="color: #333d49 ;">contact@website.com</span></p>
-            <div class="footer__social">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
+          </div>
+          <div class="footer__box">
+            <div class="footer__links">
+              <h5 class="footer__heading">Helpful Links</h5>
+              <div class="footer__nav-links">
+                <ul>
+                  <li>
+                    <a href="index.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Home
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
+                  </li>
+                  <li>
+                    <a href="about-us.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      About Us
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
+                  </li>
+                  <li>
+                    <a href="./web-development.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Services
                     </a>
-                </li>
-            </ul>
+                  </li>
+                  <li>
+                    <a href="./contact.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__links">
+              <h5 class="footer__heading">Services</h5>
+              <div class="footer__nav-links">
+                <ul>
+                  <li>
+                    <a href="./web-development.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Web Development
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./mobile-development.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Mobile Development
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./consulting.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Consulting
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./research.html">
+                      <i class="fas fa-angle-right footer__nav-links-icon"></i>
+                      Research
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <h5 class="footer__heading">Contact</h5>
+            <div class="footer__contact-info">
+              <p>
+                E-Mail: <span style="color: #333d49">contact@website.com</span>
+              </p>
+              <div class="footer__social">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- <p>aksldjfasklj@klsjdka.com</p>
+                      <p>023423904823092</p>
+                      <p>kabul asdkfjaskljkl</p> -->
+            </div>
+          </div>
         </div>
-            <!-- <p>aksldjfasklj@klsjdka.com</p>
-            <p>023423904823092</p>
-            <p>kabul asdkfjaskljkl</p> -->
-        </div>
-           </div>
-           <p class="copyright">
-            © 2020 Website. All Rights Reserved.
-           </p>
-        </div>
+
+        <p class="copyright">© 2020 Website. All Rights Reserved.</p>
+      </div>
     </footer>
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
